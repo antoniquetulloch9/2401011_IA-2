@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register for Coding Conf 2026.">
+    <title>Coding Conf 2026 | Registration</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/validation.js" defer></script>
+
+</head>
+
+<body>
+
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <span class="brand-mark">&lt;/&gt;</span>
+            <span>Coding Conf</span>
+        </a>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a class="nav-register" href="login.html">Register</a>
+        </nav>
+    </header>
+
+    <main class="form-page">
+
+        <section class="form-intro">
+            <p class="eyebrow">CODING CONF 2026</p>
+
+            <h1>
+                Secure your
+                <span>spot.</span>
+            </h1>
+
+            <p>
+                Enter your details below to create your personal event ticket.
+            </p>
+        </section>
+
+        <form id="registrationForm" class="registration-form" novalidate>
+
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+
+                <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Enter your full name"
+                    autocomplete="name"
+                    aria-describedby="nameError"
+                >
+
+                <small id="nameError" class="error-message" aria-live="polite"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+
+                <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="example@email.com"
+                    autocomplete="email"
+                    aria-describedby="emailError"
+                >
+
+                <small id="emailError" class="error-message" aria-live="polite"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="github">GitHub Tag</label>
+
+                <input
+                    type="text"
+                    id="github"
+                    name="github"
+                    placeholder="@username"
+                    aria-describedby="githubHelp githubError"
+                >
+
+                <small id="githubHelp" class="field-help">
+                    Your GitHub tag must begin with @.
+                </small>
+
+                <small id="githubError" class="error-message" aria-live="polite"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="avatar">Upload Profile Picture</label>
+
+                <input
+                    type="file"
+                    id="avatar"
+                    name="avatar"
+                    accept=".jpg,.jpeg,.png,image/jpeg,image/png"
+                    aria-describedby="avatarHelp avatarError"
+                >
+
+                <small id="avatarHelp" class="field-help">
+                    JPEG or PNG only. Maximum file size: under 500 KB.
+                </small>
+
+                <small id="avatarError" class="error-message" aria-live="polite"></small>
+
+                <img
+                    id="imagePreview"
+                    class="image-preview"
+                    alt="Preview of selected profile picture"
+                    hidden
+                >
+            </div>
+
+            <button type="submit" class="button button-primary form-submit">
+                Generate My Ticket →
+            </button>
+
+            <p class="form-note">
+                Your information will be used to create your event ticket.
+            </p>
+
+        </form>
+
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand" href="index.html">
+            <span class="brand-mark">&lt;/&gt;</span>
+            <span>Coding Conf</span>
+        </a>
+
+        <p>© 2026 Coding Conf. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
